@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Mi formulario</title> 
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+
+        <form role="form" method="post" action="index.html">
+          <div class="form-group"> 
+              <p>Ingrese su nombre:</p>
+            <label for="nombre"></label>
+            <input type="text" class="form-control" id="nombre"required>
+          </div>
+          
+          <div class="form-group"> 
+              <p>Ingrese su Email:</p>
+            <label for="email"> </label>
+            <input type="text" class="form-control" id="email"required>
+          </div> 
+            <hr>
+            <div class="form-group">          
+                <label for="identificacion">Seleccione tipo de didentificacion</label> 
+                <select class="form-control" id="identificacion" name="identificacion"> 
+                    <option>Rut</option> 
+                    <option>Pasaporte</option>
+                </select> 
+            </div>
+            <div class="form-group"> 
+                <p>Ingrese su numero de documento:</p>
+            <label for="numdoc"></label>
+            <input type="text" class="form-control" id="numdoc"required>
+            </div>
+            <hr>
+            <div class="form-group"> 
+                <p>Ingrese numero de contacto(opcional):</p>
+            <label for="numcontact"></label>
+            <input type="text" class="form-control" id="numcontact">
+            </div>
+            <div class="form-group"> 
+                <p>Ingrese ciudad de residencia:</p>
+            <label for="ciudadresi"></label>
+            <input type="text" class="form-control" id="ciudadresi"required>
+            </div>
+            <div class="form-group"> 
+                <p>Comente en que procesos le gustaria participar de nuestros proyectos</p>
+                <label for="comentarios"></label>
+                <textarea class="form-control" rows="5" id="comentarios" name="comentarios"></textarea>
+              </div> 
+              <div class="form-group"> 
+                
+    
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Enviar">
+              </div> 
+          </div>
+    
+</body>
+
+
+
+</html>
